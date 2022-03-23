@@ -15,7 +15,7 @@ interface cityFoodDao {
 
 
     @Query("SELECT * FROM city_food")
-    fun getAll(): LiveData<List<CityFood>>
+    fun getAll():  LiveData<List<CityFood>>
 
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
